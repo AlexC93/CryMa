@@ -1,0 +1,383 @@
+swagger: '2.0'
+info:
+  description: Cryma server
+  version: 1.0.0
+  title: CryMa
+  contact:
+    email: CryMaDevTeam@gmail.com
+host: www.cryma.ro
+basePath: /v1
+tags:
+  - name: cryptocurrencies
+    description: Access to cryptocurrency information
+  - name: news
+    description: >-
+      Information about general cryptocurrency news or news about a specific
+      cryptocurrency
+  - name: comments
+    description: Comment related actions
+  - name: prediction
+    description: Predicts the future change in a cryptocurrency's values
+  - name: internal
+    description: Services used internally
+schemes:
+  - http
+paths:
+  /details/cryptocurrencies:
+    get:
+      tags:
+        - cryptocurrencies
+      summary: Gets all possible details for a cryptocurrency
+      description: ''
+      operationId: getCryptocurrencies
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: All OK
+          schema:
+            type: array
+            items:
+              type: string
+        '500':
+          description: Internal server error
+  '/details/{cryptocurrencyId}':
+    get:
+      tags:
+        - cryptocurrencies
+      summary: Returns the details of a specific cryptocurrency
+      description: ''
+      operationId: getDetails
+      produces:
+        - application/json
+      parameters:
+        - name: cryptocurrencyId
+          in: path
+          description: The unique name of a cryptocurrency
+          required: true
+          type: string
+      responses:
+        '200':
+          description: All OK
+          schema:
+            type: object
+            $ref: '#/definitions/Cryptocurrency'
+        '404':
+          description: Cryptocurrency details not found
+        '405':
+          description: Cryptocurrency ID not found - invalid id
+        '500':
+          description: Internal server error
+  /comment:
+    post:
+      summary: Add a new comment
+      tags:
+        - comments
+      parameters:
+        - name: commenterName
+          in: query
+          description: Name of the commenter
+          required: true
+          type: string
+        - name: comment
+          in: query
+          description: Content of the comment
+          required: true
+          type: string
+        - name: cryptocurrencyID
+          in: query
+          description: Id of the cryptocurrency
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Comment added
+        '404':
+          description: The cryptocurrency was not found
+        '500':
+          description: Internal server error
+  '/details/{cryptocurrencyId}/value':
+    get:
+      tags:
+        - cryptocurrencies
+      summary: Returns the current value
+      description: Returns the current value of the specified cryptocurrency
+      operationId: getCurrentValue
+      produces:
+        - application/json
+      parameters:
+        - name: cryptocurrencyId
+          in: path
+          description: The unique name of a cryptocurrency
+          required: true
+          type: string
+      responses:
+        '200':
+          description: All OK
+          schema:
+            type: number
+            format: double
+        '404':
+          description: Cryptocurrency prices not found
+        '405':
+          description: Invalid data
+        '500':
+          description: Internal server error
+  '/details/{cryptocurrencyId}/prices':
+    get:
+      tags:
+        - cryptocurrencies
+      summary: Returns the historical prices of a cryptocurrency
+      description: ''
+      operationId: getHistoricalValues
+      produces:
+        - application/json
+      parameters:
+        - name: cryptocurrencyId
+          in: path
+          description: The unique name of a cryptocurrency
+          required: true
+          type: string
+        - name: fromDate
+          in: query
+          description: Returns the historical prices starting from that date
+          required: false
+          type: string
+          format: date-time
+        - name: toDate
+          in: query
+          description: Returns the historical prices up to that date
+          required: false
+          type: string
+          format: date-time
+      responses:
+        '200':
+          description: All OK
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                price:
+                  type: number
+                  format: double
+                atDate:
+                  type: string
+                  format: date-time
+        '404':
+          description: Cryptocurrency prices not found
+        '405':
+          description: Invalid data
+        '500':
+          description: Internal server error
+  /news:
+    get:
+      tags:
+        - news
+      summary: Returns the most recent news about cryptocurrencies in general
+      description: ''
+      operationId: getNews
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: All OK
+          schema:
+            type: array
+            items:
+              type: object
+              $ref: '#/definitions/News'
+        '500':
+          description: Internal server error
+  '/news/{cryptocurrencyId}':
+    get:
+      tags:
+        - news
+      summary: Returns the most recent news about a specific cryptocurrency
+      operationId: getNewsAboutCryptocurrency
+      produces:
+        - application/json
+      parameters:
+        - name: cryptocurrencyId
+          in: path
+          description: The unique name of a cryptocurrency
+          required: true
+          type: string
+      responses:
+        '200':
+          description: All OK
+          schema:
+            type: array
+            items:
+              type: object
+              $ref: '#/definitions/News'
+        '404':
+          description: Cryptocurrency news not found
+        '405':
+          description: Invalid data
+        '500':
+          description: Internal server error
+  '/prediction/{cryptocurrencyId}':
+    get:
+      tags:
+        - prediction
+      summary: Returns the most recent news about cryptocurrencies in general
+      description: ''
+      operationId: predict
+      produces:
+        - application/json
+      parameters:
+        - name: cryptocurrencyId
+          in: path
+          description: The unique name of a cryptocurrency
+          required: true
+          type: string
+        - name: period
+          in: query
+          description: Specifies if the prediction is done for the next day / week / month
+          required: false
+          type: string
+      responses:
+        '200':
+          description: All OK
+          schema:
+            type: number
+            format: double
+        '404':
+          description: Cryptocurrency not found
+        '405':
+          description: Invalid data
+        '500':
+          description: Internal server error
+  '/prices/{cryptocurrencyId}':
+    get:
+      tags:
+        - internal
+      summary: Returns the historical prices of a cryptocurrency
+      description: >-
+        Uses APIs and interrogates sparql endpoints to collect data about
+        historical prices of a cryptocurrency
+      operationId: collectHistoricalValues
+      produces:
+        - application/json
+      parameters:
+        - name: cryptocurrencyId
+          in: path
+          description: The unique name of a cryptocurrency
+          required: true
+          type: string
+        - name: fromDate
+          in: query
+          description: Returns the historical prices starting from that date
+          required: false
+          type: string
+          format: date-time
+      responses:
+        '200':
+          description: All OK
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                price:
+                  type: number
+                  format: double
+                atDate:
+                  type: string
+                  format: date-time
+        '404':
+          description: Cryptocurrency prices not found
+  '/general_details/{cryptocurrencyId}':
+    get:
+      tags:
+        - internal
+      summary: Returns general details about a specific cryptocurrency
+      description: Uses APIs and interrogates sparql endpoints to collect general data
+      operationId: getGeneralData
+      produces:
+        - application/json
+      parameters:
+        - name: cryptocurrencyId
+          in: path
+          description: The unique name of a cryptocurrency
+          required: true
+          type: string
+      responses:
+        '200':
+          description: All OK
+          schema:
+            type: object
+            $ref: '#/definitions/Cryptocurrency'
+        '404':
+          description: Cryptocurrency details not found
+definitions:
+  Cryptocurrency:
+    type: object
+    properties:
+      abstract:
+        type: string
+      symbol:
+        type: string
+      usingCountries:
+        type: array
+        items:
+          type: string
+      label:
+        type: array
+        items:
+          type: object
+          properties:
+            labelName:
+              type: string
+            labelLanguage:
+              type: string
+      prices:
+        type: array
+        items:
+          type: object
+          properties:
+            price:
+              type: string
+            priceDate:
+              type: string
+              format: date-time
+      news:
+        type: array
+        items:
+          type: object
+          $ref: '#/definitions/News'
+      comments:
+        type: array
+        items:
+          type: object
+          $ref: '#/definitions/Comment'
+  News:
+    type: object
+    properties:
+      title:
+        type: string
+      summary:
+        type: string
+      url:
+        type: string
+  Comment:
+    type: object
+    properties:
+      commenterName:
+        type: string
+      content:
+        type: string
+  ApiResponse:
+    type: object
+    properties:
+      code:
+        type: integer
+        format: int32
+      type:
+        type: string
+      message:
+        type: string
+externalDocs:
+  description: Find out more about CryMa
+  url: 'https://github.com/AlexC93/CryMa/wiki'
