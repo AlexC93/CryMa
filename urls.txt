@@ -1,0 +1,13 @@
+/details/cryptocurrencies				--- returns a list with the names of all cryptocurrencies stored in the internal db 
+/details/{cryptocurrencyId}?			--- returns all details of a cryptocurrency, parameters are the same as /prices? | 404 not found and 405 validation of timestamps
+/details/{cryptocurrencyId}/value		--- returns the current value of a cryptocurrency | 404
+/details/{cryptocurrencyId}/prices?		--- returns a list with the historical values of a cryptocurrency (optional parameters FROM and TO - to will have currentdate as default and from will have current date - 1 year as default) | 404, 405 invalid timestamps
+/news									--- returns a list with news about cryptocurrencies in general
+/news/{cryptocurrencyId}				--- returns a list | 404
+/comment?comm=...&cryptoID=...			--- saves a comment    (POST method) | 200 OK, 405 Validation error if cryptoID is not recognized
+/wallet?								--- accepts a list of parameters crypto1, quantity1, crypto2, quantity2, etc | 404 for cryptoID not found and 405 for quantity data validation
+/prediction/{cryptocurrencyId}?...		--- parameter: period of time | 404 and 405
+/prices/{cryptocurrencyId}?				--- returns the historical prices for a cryptocurrency; optional parameter FROM (timestamp) to return only the historical prices starting from that date | 404 and 405
+/general_details/{cryptocurrencyId}		--- returns the general details for a certain cryptocurrency; service will be used only by the internal db service when the data for that cryptocurrency is missing or is expired | 404
+
+200 and 500 to all
