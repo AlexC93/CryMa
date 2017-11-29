@@ -1,0 +1,79 @@
+swagger: '2.0'
+info:
+  description: Cryma server
+  version: 1.0.0
+  title: CryMa
+  contact:
+    email: CryMaDevTeam@gmail.com
+host: www.cryma.ro
+basePath: /v1
+tags:
+  - name: cryptocurrency
+    description: Access to cryptocurrency information
+  - name: news
+    description: >-
+      Information about general cryptocurrency news or news about a specific
+      cryptocoin
+schemes:
+  - http
+paths:
+  /details/cryptocurrencies:
+    get:
+      tags:
+        - pet
+      summary: Gets all possible details for a cryptocoin
+      description: ''
+      operationId: getDetails
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: All OK
+          schema:
+            type: array
+            items:
+              type: string
+definitions:
+  ApiResponse:
+    type: object
+    properties:
+      code:
+        type: integer
+        format: int32
+      type:
+        type: string
+      message:
+        type: string
+  Cryptocoin:
+    type: object
+    properties:
+      abstract:
+        type: string
+      symbol:
+        type: string
+      usingCountries:
+        type: array
+        items:
+          type: string
+      label:
+        type: array
+        items:
+          type: object
+          properties:
+            labelName:
+              type: string
+            labelLanguage:
+              type: string
+      prices:
+        type: array
+        items:
+          type: object
+          properties:
+            price:
+              type: string
+            priceDate:
+              type: string
+              format: date-time
+externalDocs:
+  description: Find out more about CryMa
+  url: 'https://github.com/AlexC93/CryMa/wiki'
