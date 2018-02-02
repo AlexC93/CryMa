@@ -1,0 +1,1122 @@
+2018-01-24 22:03:39 INFO  CryptoRetriever:35 - Wikidata query built:
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?repo ?logo WHERE {
+?item wdt:P31 wd:Q13479982.
+OPTIONAL { ?item wdt:P1324 ?repo }.
+OPTIONAL { ?item wdt:P154 ?logo }.
+SERVICE wikibase:label { bd:serviceParam 
+wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+2018-01-24 22:03:40 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=24-Jan-2018;Path=/;HttpOnly;secure;Expires=Sun, 25 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 25 Feb 2018 12:00:00 GMT
+2018-01-24 22:03:40 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=24-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Sun, 25 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 25 Feb 2018 12:00:00 GMT
+2018-01-24 22:04:20 INFO  CryptoRetriever:35 - 
+Wikidata query built:
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?repo ?logo WHERE {
+?item wdt:P31 wd:Q13479982.
+OPTIONAL { ?item wdt:P1324 ?repo }.
+OPTIONAL { ?item wdt:P154 ?logo }.
+SERVICE wikibase:label { bd:serviceParam 
+wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-24 22:04:21 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=24-Jan-2018;Path=/;HttpOnly;secure;Expires=Sun, 25 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 25 Feb 2018 12:00:00 GMT
+2018-01-24 22:04:21 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=24-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Sun, 25 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 25 Feb 2018 12:00:00 GMT
+2018-01-24 22:05:15 INFO  CryptoRetriever:35 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?repo ?logo WHERE {
+?item wdt:P31 wd:Q13479982.
+OPTIONAL { ?item wdt:P1324 ?repo }.
+OPTIONAL { ?item wdt:P154 ?logo }.
+SERVICE wikibase:label { bd:serviceParam 
+wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-24 22:05:16 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=24-Jan-2018;Path=/;HttpOnly;secure;Expires=Sun, 25 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 25 Feb 2018 12:00:00 GMT
+2018-01-24 22:05:16 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=24-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Sun, 25 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 25 Feb 2018 12:00:00 GMT
+2018-01-27 17:01:34 INFO  CryptoRetriever:35 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam 
+wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 17:02:46 INFO  CryptoRetriever:35 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 17:03:12 INFO  CryptoRetriever:35 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 17:03:14 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 17:03:14 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 17:04:41 INFO  CryptoRetriever:35 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 17:04:42 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 17:04:42 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 17:05:56 INFO  CryptoRetriever:35 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 17:05:57 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 17:05:57 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 17:28:51 INFO  CryptoRetriever:35 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 17:28:52 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 17:28:52 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 18:26:26 INFO  CryptoRetriever:35 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 18:26:28 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 18:26:28 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 18:34:57 INFO  CryptoRetriever:35 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 18:34:58 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 18:34:58 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 18:35:39 INFO  CryptoRetriever:35 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 18:35:39 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 18:35:39 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 18:36:17 INFO  CryptoRetriever:35 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 18:36:18 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 18:36:18 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:04:30 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 19:04:31 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:04:31 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:06:10 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 19:06:11 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:06:11 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:06:19 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 19:06:21 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:06:21 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:08:49 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 19:08:50 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:08:50 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:15:52 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?quora ?subreddit WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 19:15:53 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:15:53 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:40:51 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 19:40:52 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:40:52 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:41:25 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 19:41:26 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 19:41:26 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:19:53 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 22:19:55 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:19:55 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:21:47 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 22:21:49 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:21:49 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:27:45 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 22:27:46 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:27:46 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:29:52 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 22:29:53 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:29:53 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:31:54 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 22:31:56 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:31:56 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:36:36 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 22:36:37 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:36:37 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:39:33 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-27 22:39:35 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=27-Jan-2018;Path=/;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-27 22:39:35 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=27-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Wed, 28 Feb 2018 12:00:00 GMT". Invalid 'expires' attribute: Wed, 28 Feb 2018 12:00:00 GMT
+2018-01-28 17:52:28 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 17:52:30 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 17:52:30 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 22:25:00 INFO  MainModel:43 - Dataset not found. Retrieving new data
+2018-01-28 22:25:00 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 22:25:01 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 22:25:01 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 22:25:01 INFO  MainModel:54 - Saving dataset
+2018-01-28 22:35:30 INFO  MainModel:43 - Dataset not found. Retrieving new data
+2018-01-28 22:35:30 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 22:35:31 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 22:35:31 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 22:35:32 INFO  MainModel:54 - Saving dataset
+2018-01-28 22:41:41 INFO  MainModel:63 - dataset empty. loading data
+2018-01-28 22:41:41 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 22:41:42 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 22:41:42 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 22:56:02 INFO  MainModel:63 - Loading data
+2018-01-28 22:56:02 INFO  MainModel:77 - Data already loaded
+2018-01-28 22:56:27 INFO  MainModel:63 - Loading data
+2018-01-28 22:56:27 INFO  MainModel:67 - Dataset empty
+2018-01-28 22:56:27 INFO  MainModel:68 - Loading new data
+2018-01-28 22:56:27 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 22:56:28 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 22:56:28 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:12:47 INFO  MainModel:43 - Loading data
+2018-01-28 23:12:47 INFO  MainModel:47 - Dataset empty
+2018-01-28 23:12:47 INFO  MainModel:111 - Loading new data
+2018-01-28 23:12:47 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 23:12:48 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:12:48 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:13:43 INFO  MainModel:43 - Loading data
+2018-01-28 23:13:43 INFO  MainModel:47 - Dataset empty
+2018-01-28 23:13:43 INFO  MainModel:111 - Loading new data
+2018-01-28 23:13:43 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 23:13:44 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:13:44 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:16:55 INFO  MainModel:43 - Loading data
+2018-01-28 23:16:55 INFO  MainModel:47 - Dataset empty
+2018-01-28 23:16:55 INFO  MainModel:111 - Loading new data
+2018-01-28 23:16:55 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 23:16:56 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:16:56 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:25:03 INFO  MainModel:43 - Loading data
+2018-01-28 23:25:03 INFO  MainModel:47 - Dataset empty
+2018-01-28 23:25:03 INFO  MainModel:111 - Loading new data
+2018-01-28 23:25:03 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 23:25:04 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:25:04 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:25:04 INFO  MainModel:118 - New data saved
+2018-01-28 23:25:30 INFO  MainModel:43 - Loading data
+2018-01-28 23:25:30 INFO  MainModel:50 - Data already loaded
+2018-01-28 23:26:20 INFO  MainModel:43 - Loading data
+2018-01-28 23:26:20 INFO  MainModel:50 - Data already loaded
+2018-01-28 23:26:53 INFO  MainModel:43 - Loading data
+2018-01-28 23:26:53 INFO  MainModel:50 - Data already loaded
+2018-01-28 23:27:33 INFO  MainModel:43 - Loading data
+2018-01-28 23:27:33 INFO  MainModel:47 - Dataset empty
+2018-01-28 23:27:33 INFO  MainModel:114 - Loading new data
+2018-01-28 23:27:33 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 23:27:34 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:27:34 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:27:35 INFO  MainModel:119 - New data saved
+2018-01-28 23:27:52 INFO  MainModel:43 - Loading data
+2018-01-28 23:27:52 INFO  MainModel:50 - Data already loaded
+2018-01-28 23:29:14 INFO  MainModel:43 - Loading data
+2018-01-28 23:29:14 INFO  MainModel:47 - Dataset empty
+2018-01-28 23:29:14 INFO  MainModel:114 - Loading new data
+2018-01-28 23:29:14 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 23:29:15 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:29:15 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:29:16 INFO  MainModel:117 - New data saved
+2018-01-28 23:43:09 INFO  MainModel:44 - Loading data
+2018-01-28 23:43:09 INFO  MainModel:51 - Data already loaded
+2018-01-28 23:43:26 INFO  MainModel:44 - Loading data
+2018-01-28 23:43:26 INFO  MainModel:48 - Dataset empty
+2018-01-28 23:43:26 INFO  MainModel:115 - Loading new data
+2018-01-28 23:43:26 INFO  CryptoRetriever:37 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-28 23:43:27 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=28-Jan-2018;Path=/;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:43:27 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=28-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Thu, 01 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Thu, 01 Mar 2018 12:00:00 GMT
+2018-01-28 23:43:27 INFO  MainModel:118 - New data saved
+2018-01-30 19:44:42 INFO  MainModel:42 - Loading data
+2018-01-30 19:44:43 INFO  MainModel:46 - Dataset empty
+2018-01-30 19:44:43 INFO  MainModel:111 - Loading new data
+2018-01-30 19:44:43 INFO  CryptoRetriever:34 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-30 19:44:44 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=30-Jan-2018;Path=/;HttpOnly;secure;Expires=Sat, 03 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sat, 03 Mar 2018 12:00:00 GMT
+2018-01-30 19:44:44 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=30-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Sat, 03 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sat, 03 Mar 2018 12:00:00 GMT
+2018-01-30 19:44:44 INFO  MainModel:114 - New data saved
+2018-01-30 19:50:52 INFO  MainModel:42 - Loading data
+2018-01-30 19:50:52 INFO  MainModel:46 - Dataset empty
+2018-01-30 19:50:52 INFO  MainModel:111 - Loading new data
+2018-01-30 19:50:52 INFO  CryptoRetriever:34 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-01-30 19:50:53 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=30-Jan-2018;Path=/;HttpOnly;secure;Expires=Sat, 03 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sat, 03 Mar 2018 12:00:00 GMT
+2018-01-30 19:50:53 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=30-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Sat, 03 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sat, 03 Mar 2018 12:00:00 GMT
+2018-01-30 19:50:53 INFO  MainModel:114 - New data saved
+2018-02-01 00:02:29 INFO  MainModel:56 - Loading data
+2018-02-01 00:02:29 INFO  MainModel:60 - Dataset empty
+2018-02-01 00:02:29 INFO  MainModel:139 - Loading new data
+2018-02-01 00:02:29 INFO  CryptoRetriever:34 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-02-01 00:02:30 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=31-Jan-2018;Path=/;HttpOnly;secure;Expires=Sun, 04 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 04 Mar 2018 12:00:00 GMT
+2018-02-01 00:02:30 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=31-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Sun, 04 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 04 Mar 2018 12:00:00 GMT
+2018-02-01 00:02:30 INFO  MainModel:142 - New data saved
+2018-02-01 00:20:16 INFO  MainModel:56 - Loading data
+2018-02-01 00:20:16 INFO  MainModel:60 - Dataset empty
+2018-02-01 00:20:16 INFO  MainModel:139 - Loading new data
+2018-02-01 00:20:16 INFO  CryptoRetriever:34 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-02-01 00:20:18 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=31-Jan-2018;Path=/;HttpOnly;secure;Expires=Sun, 04 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 04 Mar 2018 12:00:00 GMT
+2018-02-01 00:20:18 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=31-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Sun, 04 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 04 Mar 2018 12:00:00 GMT
+2018-02-01 00:20:18 INFO  MainModel:142 - New data saved
+2018-02-01 00:29:25 INFO  MainModel:56 - Loading data
+2018-02-01 00:29:25 INFO  MainModel:60 - Dataset empty
+2018-02-01 00:29:25 INFO  MainModel:139 - Loading new data
+2018-02-01 00:29:25 INFO  CryptoRetriever:34 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-02-01 00:29:26 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=31-Jan-2018;Path=/;HttpOnly;secure;Expires=Sun, 04 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 04 Mar 2018 12:00:00 GMT
+2018-02-01 00:29:26 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=31-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Sun, 04 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 04 Mar 2018 12:00:00 GMT
+2018-02-01 00:29:26 INFO  MainModel:142 - New data saved
+2018-02-01 00:56:51 INFO  MainModel:56 - Loading data
+2018-02-01 00:56:51 INFO  MainModel:60 - Dataset empty
+2018-02-01 00:56:51 INFO  MainModel:139 - Loading new data
+2018-02-01 00:56:51 INFO  CryptoRetriever:34 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-02-01 00:56:53 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=31-Jan-2018;Path=/;HttpOnly;secure;Expires=Sun, 04 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 04 Mar 2018 12:00:00 GMT
+2018-02-01 00:56:53 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=31-Jan-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Sun, 04 Mar 2018 12:00:00 GMT". Invalid 'expires' attribute: Sun, 04 Mar 2018 12:00:00 GMT
+2018-02-01 00:56:53 INFO  MainModel:142 - New data saved
+2018-02-01 02:46:46 INFO  MainModel:57 - Loading data
+2018-02-01 02:46:46 INFO  MainModel:61 - Dataset empty
+2018-02-01 02:46:46 INFO  MainModel:141 - Loading new data
+2018-02-01 02:46:46 INFO  CryptoRetriever:34 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-02-01 02:46:47 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=01-Feb-2018;Path=/;HttpOnly;secure;Expires=Mon, 05 Mar 2018 00:00:00 GMT". Invalid 'expires' attribute: Mon, 05 Mar 2018 00:00:00 GMT
+2018-02-01 02:46:47 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=01-Feb-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Mon, 05 Mar 2018 00:00:00 GMT". Invalid 'expires' attribute: Mon, 05 Mar 2018 00:00:00 GMT
+2018-02-01 02:46:47 INFO  MainModel:144 - New data saved
+2018-02-01 02:50:02 INFO  MainModel:57 - Loading data
+2018-02-01 02:50:02 INFO  MainModel:61 - Dataset empty
+2018-02-01 02:50:02 INFO  MainModel:141 - Loading new data
+2018-02-01 02:50:02 INFO  CryptoRetriever:34 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-02-01 02:50:03 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=01-Feb-2018;Path=/;HttpOnly;secure;Expires=Mon, 05 Mar 2018 00:00:00 GMT". Invalid 'expires' attribute: Mon, 05 Mar 2018 00:00:00 GMT
+2018-02-01 02:50:03 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=01-Feb-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Mon, 05 Mar 2018 00:00:00 GMT". Invalid 'expires' attribute: Mon, 05 Mar 2018 00:00:00 GMT
+2018-02-01 02:50:03 INFO  MainModel:144 - New data saved
+2018-02-01 03:25:47 INFO  MainModel:57 - Loading data
+2018-02-01 03:25:47 INFO  MainModel:61 - Dataset empty
+2018-02-01 03:25:47 INFO  MainModel:141 - Loading new data
+2018-02-01 03:25:47 INFO  CryptoRetriever:34 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-02-01 03:25:49 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=01-Feb-2018;Path=/;HttpOnly;secure;Expires=Mon, 05 Mar 2018 00:00:00 GMT". Invalid 'expires' attribute: Mon, 05 Mar 2018 00:00:00 GMT
+2018-02-01 03:25:49 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=01-Feb-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Mon, 05 Mar 2018 00:00:00 GMT". Invalid 'expires' attribute: Mon, 05 Mar 2018 00:00:00 GMT
+2018-02-01 03:25:49 INFO  MainModel:144 - New data saved
+2018-02-01 05:11:04 INFO  MainModel:57 - Loading data
+2018-02-01 05:11:04 INFO  MainModel:61 - Dataset empty
+2018-02-01 05:11:04 INFO  MainModel:140 - Loading new data
+2018-02-01 05:11:04 INFO  CryptoRetriever:34 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-02-01 05:11:05 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=01-Feb-2018;Path=/;HttpOnly;secure;Expires=Mon, 05 Mar 2018 00:00:00 GMT". Invalid 'expires' attribute: Mon, 05 Mar 2018 00:00:00 GMT
+2018-02-01 05:11:05 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=01-Feb-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Mon, 05 Mar 2018 00:00:00 GMT". Invalid 'expires' attribute: Mon, 05 Mar 2018 00:00:00 GMT
+2018-02-01 05:11:05 INFO  MainModel:143 - New data saved
+2018-02-01 05:12:38 INFO  MainModel:57 - Loading data
+2018-02-01 05:12:38 INFO  MainModel:61 - Dataset empty
+2018-02-01 05:12:38 INFO  MainModel:140 - Loading new data
+2018-02-01 05:12:38 INFO  CryptoRetriever:34 - Wikidata query built:
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?item ?itemLabel ?logo ?sname ?symbol ?website ?repo ?subreddit ?quora WHERE {
+  ?item wdt:P31 wd:Q13479982.
+  OPTIONAL { ?item wdt:P1324 ?repo }.
+  OPTIONAL { ?item wdt:P154 ?logo }.
+  OPTIONAL { ?item wdt:P1813 ?sname }.
+  OPTIONAL { ?item wdt:P487 ?symbol }.
+  OPTIONAL { ?item wdt:P856 ?website }.
+  OPTIONAL { ?item wdt:P3984 ?subreddit}.
+  OPTIONAL { ?item wdt:P3417 ?quora}.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 1000
+
+2018-02-01 05:12:39 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access=01-Feb-2018;Path=/;HttpOnly;secure;Expires=Mon, 05 Mar 2018 00:00:00 GMT". Invalid 'expires' attribute: Mon, 05 Mar 2018 00:00:00 GMT
+2018-02-01 05:12:39 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: WMF-Last-Access-Global=01-Feb-2018;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Mon, 05 Mar 2018 00:00:00 GMT". Invalid 'expires' attribute: Mon, 05 Mar 2018 00:00:00 GMT
+2018-02-01 05:12:44 INFO  MainModel:143 - New data saved
