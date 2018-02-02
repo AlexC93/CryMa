@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>CryMa</title>
+	<h:outputStylesheet name="css/style.css" />
+</h:head>
+<h:body>
+	<h:form prependId="false">
+		<h:panelGrid columns="2" cellpadding="10">
+			<p:outputLabel for="cryptocurrencies" value="Select cryptocurrency" />
+			<p:selectOneMenu id="cryptocurrencies"
+				value="#{currencyBean.selectedCryptocurrency}" effect="fade"
+				filter="true" filterMatchMode="startsWith">
+				<f:selectItems value="#{currencyBean.availableCryptocurrencies}" />
+			</p:selectOneMenu>
+			<p:outputLabel for="currencies" value="Select currency" />
+			<p:selectOneMenu id="currencies"
+				value="#{currencyBean.selectedCurrency}" effect="fade" filter="true"
+				filterMatchMode="startsWith">
+				<f:selectItems value="#{currencyBean.availableCurrencies}" />
+			</p:selectOneMenu>
+		</h:panelGrid>
+		<p:separator />
+		<br />
+		<h:panelGrid id="cryptocurrencyWorth" columns="1">
+			<p:outputLabel
+				value="#{currencyBean.selectedCryptocurrency} is now worth #{currencyBean.selectedCryptocurrency} #{currencyBean.selectedCurrency.swiftCode}" />
+		</h:panelGrid>
+		<br />
+		<p:chart id="cryptocurrencyChart" type="line"
+			model="#{currencyBean.cryptocurrencyChartModel}" responsive="true" />
+	</h:form>
+	<br />
+	<h:panelGrid id="detailsButton" columns="1">
+		<p:button outcome="details" value="Details" icon="ui-icon-info" />
+	</h:panelGrid>
+	<p:separator />
+	<br />
+	<h:panelGrid id="indexButtons" columns="4" cellpadding="10">
+		<p:button outcome="walletsim" value="Wallet" icon="ui-icon-calculator" />
+		<p:button outcome="prediction" value="Prediction" icon="ui-icon-help" />
+		<p:button outcome="compare" value="Compare" icon="ui-icon-wrench" />
+		<p:button outcome="news" value="News" icon="ui-icon-comment" />
+	</h:panelGrid>
+</h:body>
+</html>

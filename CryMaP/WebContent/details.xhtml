@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>CryMa</title>
+	<h:outputStylesheet name="css/style.css" />
+</h:head>
+<h:body>
+	<p:button value="Back" outcome="index"
+		icon="ui-icon-arrowreturnthick-1-w" />
+	<h:panelGrid columns="2" cellpadding="10">
+		<p:outputLabel for="cryptocurrencies" value="Select cryptocurrency" />
+		<p:selectOneMenu id="cryptocurrencies"
+			value="#{detailsBean.selectedCryptocurrency}" effect="fade"
+			filter="true" filterMatchMode="startsWith">
+			<f:selectItems value="#{detailsBean.availableCryptocurrencies}" />
+		</p:selectOneMenu>
+		<p:outputLabel for="currencies" value="Select currency" />
+		<p:selectOneMenu id="currencies"
+			value="#{detailsBean.selectedCurrency}" effect="fade" filter="true"
+			filterMatchMode="startsWith">
+			<f:selectItems value="#{detailsBean.availableCurrencies}" />
+		</p:selectOneMenu>
+	</h:panelGrid>
+	<p:separator />
+	<br />
+	<h:panelGrid id="currencyDetails" columns="1">
+		<p:outputLabel
+			value="Details about the most well known cryptocurrencies" />
+	</h:panelGrid>
+	<br />
+	<p:dataTable emptyMessage="No cryptocurrencies retrieved!" var="crypto" value="#{detailsBean.detailedCryptocurrencies}">
+		<p:column headerText="Name">
+			<p:outputLabel value="#{crypto.label}" />
+		</p:column>
+		<p:column headerText="Swift Code">
+			<p:outputLabel value="#{crypto.shortName}" />
+		</p:column>
+		<p:column headerText="Symbol">
+			<p:outputLabel value="#{crypto.symbol}" />
+		</p:column>
+		<p:column headerText="Official Website">
+			<p:outputLabel value="#{crypto.officialWebsite}" />
+		</p:column>
+		<p:column headerText="Source Code Repository">
+			<p:link value="#{crypto.sourceCodeRepository}" />
+		</p:column>
+		<p:column headerText="Subreddit">
+			<p:link value="#{crypto.subreddit}" />
+		</p:column>
+		<p:column headerText="Twitter Hashtag">
+			<p:outputLabel value="#{crypto.twitterHashtag}" />
+		</p:column>
+		<p:column headerText="Logo">
+			<p:link value="#{crypto.logo}" />
+		</p:column>
+		<p:column headerText="Quora Topic">
+			<p:link value="#{crypto.quora}" />
+		</p:column>
+	</p:dataTable>
+	<br />
+	<p:chart id="cryptocurrencyChart" type="line"
+		model="#{detailsBean.cryptocurrencyChartModel}" responsive="true" />
+	<br />
+	<h:panelGrid id="predictionButton" columns="1">
+		<p:button outcome="prediction" value="Prediction" icon="ui-icon-help" />
+	</h:panelGrid>
+	<br />
+	<p:outputLabel id="comments" value="Comments" />
+	<p:separator />
+	<p:dataTable id="commentsSection"
+		emptyMessage="Be the first to comment!"
+		value="#{detailsBean.comments}" />
+	<p:separator />
+	<p:inputTextarea rows="5" cols="30" counter="display" maxlength="150"
+		counterTemplate="{0} characters remaining" autoResize="true"
+		value="#{detailsBean.comment}" />
+	<br />
+	<h:outputText id="display" />
+	<br />
+	<br />
+	<h:form>
+		<p:commandButton value="Comment" update="commentsSection"
+			actionListener="#{detailsBean.addComment}" icon="ui-icon-pencil" />
+	</h:form>
+</h:body>
+</html>

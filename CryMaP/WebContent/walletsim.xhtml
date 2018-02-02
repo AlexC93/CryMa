@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>CryMa</title>
+	<h:outputStylesheet name="css/style.css" />
+</h:head>
+<h:body>
+	<p:button value="Back" outcome="index"
+		icon="ui-icon-arrowreturnthick-1-w" />
+	<h:form prependId="false">
+		<h:panelGrid columns="2" cellpadding="10">
+			<p:outputLabel for="currencies" value="Select currency" />
+			<p:selectOneMenu id="currencies"
+				value="#{walletBean.selectedCurrency}" effect="fade" filter="true"
+				filterMatchMode="startsWith">
+				<f:selectItems value="#{walletBean.availableCurrencies}" />
+			</p:selectOneMenu>
+			<p:outputLabel for="cryptocurrencies" value="Select cryptocurrency" />
+			<p:selectOneMenu id="cryptocurrencies"
+				value="#{walletBean.selectedCryptocurrency}" effect="fade"
+				filter="true" filterMatchMode="startsWith" immediate="true">
+				<f:selectItems value="#{walletBean.availableCryptocurrencies}" />
+			</p:selectOneMenu>
+		</h:panelGrid>
+		<p:separator />
+		<br />
+		<p:commandButton value="Add cryptocurrency" update="wallet"
+			actionListener="#{walletBean.add}" icon="ui-icon-plusthick"
+			process="@this" />
+		<br />
+		<br />
+		<h:panelGrid id="walletHeader" columns="1">
+			<p:outputLabel value="Wallet Contents" />
+		</h:panelGrid>
+		<br />
+		<p:dataTable id="wallet" emptyMessage="The wallet is empty!"
+			var="cryptocurrency" value="#{walletBean.walletContents}">
+			<p:column headerText="Name">
+				<p:outputLabel value="#{cryptocurrency.name}" />
+			</p:column>
+			<p:column headerText="Value">
+				<p:outputLabel value="#{cryptocurrency.value}" />
+			</p:column>
+		</p:dataTable>
+		<br />
+		<p:commandButton value="Total value"
+			actionListener="#{walletBean.total}" icon="ui-icon-calculator" />
+		<p:separator />
+		<p:outputLabel
+			value="The total value is: #{walletBean.total} #{walletBean.selectedCurrency.swiftCode}" />
+	</h:form>
+</h:body>
+</html>

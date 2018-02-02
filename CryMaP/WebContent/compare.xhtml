@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>CryMa</title>
+	<h:outputStylesheet name="css/style.css" />
+</h:head>
+<h:body>
+	<p:button value="Back" outcome="index"
+		icon="ui-icon-arrowreturnthick-1-w" />
+	<br />
+	<h:form prependId="false">
+		<h:panelGrid columns="2" cellpadding="10">
+			<p:outputLabel for="currencies" value="Select currency" />
+			<p:selectOneMenu id="currencies"
+				value="#{compareBean.selectedCurrency}" effect="fade" filter="true"
+				filterMatchMode="startsWith">
+				<f:selectItems value="#{compareBean.availableCurrencies}" />
+			</p:selectOneMenu>
+		</h:panelGrid>
+		<br />
+	</h:form>
+	<p:commandButton value="Add" icon="ui-icon-plus"
+		actionListener="#{compareBean.add}" />
+	<p:separator />
+	<h:panelGrid id="compareButtons" columns="4" cellpadding="10">
+		<p:commandButton value="24 hours" icon="ui-icon-calculator"
+			actionListener="#{compareBean.compareDay}" />
+		<p:commandButton value="1 week" icon="ui-icon-calculator"
+			actionListener="#{compareBean.compareWeek}" />
+		<p:commandButton value="1 month" icon="ui-icon-calculator"
+			actionListener="#{compareBean.compareMonth}" />
+		<p:commandButton value="1 year" icon="ui-icon-calculator"
+			actionListener="#{compareBean.compareYear}" />
+	</h:panelGrid>
+	<br />
+	<p:dataTable emptyMessage="No cryptocurrencies to compare!"
+		var="currency" value="#{compareBean.selectedCurrencies}">
+		<p:column headerText="Currency">
+			<p:outputLabel value="#{currency.name}" />
+		</p:column>
+		<p:column headerText="Value">
+			<p:outputLabel value="#{currency.value}" />
+		</p:column>
+	</p:dataTable>
+	<br />
+	<p:chart id="compareChart" type="line"
+		model="#{compareBean.chartModel}" responsive="true" />
+	<br />
+	<h:panelGrid id="percentageValueButton" columns="2" cellpadding="10">
+		<p:commandButton value="Percentage Value" icon="ui-icon-calculator"
+			actionListener="#{compareBean.percentageValue}" />
+		<p:button outcome="prediction" value="Prediction" icon="ui-icon-help" />
+	</h:panelGrid>
+</h:body>
+</html>

@@ -1,0 +1,61 @@
+#indexButtons {
+	margin: 0 auto;
+}
+
+#detailsButton {
+	margin: 0 auto;
+}
+
+#cryptocurrencyWorth {
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+#newsPanel {
+	font-weight: bold;
+}
+
+body {
+	background-color: #ced2d5;
+}
+
+#compareButtons {
+	margin: 0 auto;
+}
+
+#currencyName {
+	text-align: center;
+}
+
+#currencyValue {
+	text-align: center;
+}
+
+#percentageValueButton {
+	margin: 0 auto;
+}
+
+#currencyDetails {
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+#valueDetails {
+	margin: 0 auto;
+	font-weight: bold;
+	text-align: center;
+}
+
+#comments {
+	font-weight: bold;
+}
+
+#predictionButton {
+	margin: 0 auto;
+}
+
+#walletHeader {
+	margin: 0 auto;
+	font-weight: bold;
+	text-align: center;
+}
